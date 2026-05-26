@@ -53,7 +53,7 @@ def load_data_text(
             # drop_last=True,
             sampler=sampler,
             # shuffle=not deterministic,
-            num_workers=4,
+            num_workers=2,
         )
     else:
         data_loader = DataLoader(
@@ -62,7 +62,7 @@ def load_data_text(
             # drop_last=True,
             # sampler=sampler,
             shuffle=not deterministic,
-            num_workers=4,
+            num_workers=2,
         )
 
     if loop:
